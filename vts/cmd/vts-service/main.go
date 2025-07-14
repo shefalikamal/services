@@ -107,7 +107,7 @@ func main() {
 		}
 		coservProxyPluginManager, err = plugin.CreateGoPluginManagerWithLoader(
 			loader,
-			"coserv-handler",
+			"coserv-proxy-handler",
 			log.Named("plugin"),
 			handler.CoservProxyHandlerRPC)
 		if err != nil {
